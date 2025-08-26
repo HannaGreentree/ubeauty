@@ -507,7 +507,7 @@ html, body {
    font-family: "Nunito Sans", sans-serif;
    font-size: 1.2rem;
    margin-bottom: 10px;
-   font-weight: bold;
+   font-weight: 500;  
    letter-spacing: 8px;   
 }
 
