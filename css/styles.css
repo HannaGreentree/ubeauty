@@ -261,7 +261,7 @@ html, body {
 
 /*CIRCLE ROW*/
 
-.circle-row {
+.home-circle-row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -319,7 +319,7 @@ html, body {
     padding: 10px;
   }
 
-.circle-row {
+.home-circle-row {
    margin-bottom: 10px;
    display: flex;
    justify-content: center;
@@ -334,7 +334,7 @@ html, body {
 .circle.active {
   transform: scale(1.1);
 }
-    .circle:hover {
+.circle:hover {
   transform: scale(1.1);
 }
 
