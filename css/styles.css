@@ -1751,7 +1751,7 @@ a:hover {
   position: absolute;
   padding: 10px 20px;  
   left: 35%;
-  bottom: 200px;
+  bottom: 80px;
   background-color: rgba(255, 255, 255, 0.7);
   color: black;
   transform: translateX(-50%);        
