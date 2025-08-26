@@ -1076,7 +1076,7 @@ a:hover {
   position: absolute;
   padding: 10px 20px;  
   left: 35%;
-  bottom: 70px;
+  bottom: 55px;
   background-color: rgba(255, 255, 255, 0.7);
   color: black;
   transform: translateX(-50%);  
@@ -1252,7 +1252,7 @@ a:hover {
   .laser-circle {
     width: 150px;
     height: 150px;
-    font-size: 17px;   
+    font-size: 19px;   
   }
 
   .laser-circle-row {
@@ -1474,7 +1474,7 @@ a:hover {
     padding: 80px 20px 50px;
     box-sizing: border-box;
     margin-top: 280px;
-    padding-top: 150px;
+    padding-top: 140px;
     position: relative;
     z-index: 1; 
   }
@@ -1922,7 +1922,8 @@ a:hover {
   .nails-circle {
     width: 150px;
     height: 150px;
-    font-size: 17px;   
+    font-size: 19px; 
+    font-weight: 500;
   }
 
   .nails-circle-row {
@@ -1945,17 +1946,6 @@ a:hover {
   .nails-circle.active {
     transform: scale(1.1);
 }
-  .nails-circle {
-   font-family: "Nunito Sans", sans-serif;
-   font-weight: 500;
-   font-size: 17px;
-}
-  .nails-location h2 {
-    font-family: "Nunito Sans", sans-serif;
-    color: #0a8a44;
-    font-size: 1.8rem;
-    font-weight: 400;
-  }
 }
 
 /*NAILS PAGE SPECIALIST NAME*/
@@ -2139,7 +2129,7 @@ a:hover {
     padding: 80px 20px 50px;
     box-sizing: border-box;
     margin-top: 280px;
-    padding-top: 200px;
+    padding-top: 140px;
     position: relative;
     z-index: 1; 
   }
@@ -2500,6 +2490,7 @@ a:hover {
     border-radius: 120%;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);  
+    font-size: 19; 
   }
 
   .injections-circle-row {
@@ -2517,12 +2508,6 @@ a:hover {
     font-size: 1.8rem;
     font-weight: 400;
   }
-    
-   .injections-circle {
-      width: 150px;
-      height: 150px;
-      font-size: 17;
-   }
 }
 
 /*INJECTIONS PAGE SPECIALIST SECTION*/
@@ -2708,7 +2693,7 @@ a:hover {
     padding: 80px 20px 50px;
     box-sizing: border-box;
     margin-top: 280px;
-    padding-top: 200px;
+    padding-top: 140px;
     position: relative;
     z-index: 1; 
   }
@@ -3071,7 +3056,7 @@ a:hover {
   .eyelashes-circle {
     width: 150px;
     height: 150px;
-    font-size: 17px;   
+    font-size: 19px;   
   }
 
   .eyelashes-circle-row {
@@ -3283,7 +3268,7 @@ a:hover {
     padding: 80px 20px 50px;
     box-sizing: border-box;
     margin-top: 280px;
-    padding-top: 200px;
+    padding-top: 140px;
     position: relative;
     z-index: 1; 
   }
@@ -3652,7 +3637,7 @@ a:hover {
   .facehair-circle {
     width: 150px;
     height: 150px;
-    font-size: 17px;   
+    font-size: 19px;   
   }
 
   .facehair-circle-row {
@@ -3864,7 +3849,7 @@ a:hover {
     padding: 80px 20px 50px;
     box-sizing: border-box;
     margin-top: 280px;
-    padding-top: 200px;
+    padding-top: 140px;
     position: relative;
     z-index: 1; 
   }
@@ -4237,7 +4222,7 @@ a:hover {
   .cleaning-circle {
     width: 150px;
     height: 150px;
-    font-size: 17px;   
+    font-size: 19px;   
   }
 
   .cleaning-circle-row {
@@ -4448,7 +4433,7 @@ a:hover {
     padding: 80px 20px 50px;
     box-sizing: border-box;
     margin-top: 280px;
-    padding-top: 200px;
+    padding-top: 140px;
     position: relative;
     z-index: 1; 
   }
@@ -4857,7 +4842,7 @@ to {
 .contact-section h2 {
   font-family: "Dancing Script", cursive; 
   color: #2e5a41;
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-weight: 200;
   text-align: center;
   letter-spacing: 2px;
