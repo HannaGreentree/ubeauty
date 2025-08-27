@@ -4906,7 +4906,12 @@ to {
   .contact-section {
     padding: 20px;
   }
-
+.contact-section h2 {
+  font-family: "Dancing Script", cursive; 
+  color: #2e5a41;
+  font-size: 2em;
+ font-weight: 200;
+}
 }
 
 
