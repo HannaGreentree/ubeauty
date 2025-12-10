@@ -875,7 +875,7 @@ a:hover {
 
 .footer-logo img {
   width: 220px;
-  margin-left: 50;
+  margin-left: 50px;
   margin-top: 50px;
 }
 
@@ -2480,7 +2480,7 @@ a:hover {
     border-radius: 120%;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);  
-    font-size: 19; 
+    font-size: 19px; 
   }
 
   .injections-circle-row {
