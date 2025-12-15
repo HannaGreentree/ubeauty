@@ -7,23 +7,6 @@ All HTML files in the **U Beauty** project were validated using the official **W
 https://validator.w3.org/nu/
 
 All pages passed validation with **no critical errors**.
-
-✅ ![Homepage](images/validation/html-home-page.png)
-✅ ![Cleaning Page](images/validation/html-laser-page.png)
-✅ ![Contact Page](images/validation/html-contact-page.png)
-✅ ![Eyelashes Page](images/validation/html-laser.png)
-✅ ![Facehair Page](images/validation/html-index.png)
-✅ ![Injections Page](images/validation/html-laser.png)
-✅ ![Laser Page](images/validation/html-index.png)
-✅ ![Nails Page](images/validation/html-laser.png)
-✅ ![Fareham Sub Page](images/validation/html-index.png)
-✅ ![Gosport Sub Page](images/validation/html-laser.png)
-✅ ![London Sub Page](images/validation/html-index.png)
-✅ ![Portsmouth Sub Page](images/validation/html-laser.png)
-✅ ![Southampton Sub Page](images/validation/html-index.png)
-✅ ![Whiteley Sub Page](images/validation/html-laser.png)
-✅ ![Winchester Sub Page](images/validation/html-index.png)
-
 ---
 
 ## HTML Validation Summary
