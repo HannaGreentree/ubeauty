@@ -82,6 +82,197 @@ The project is deployed on GitHub Pages:
 
 Project created by Hanna Greentree
 
+# UBeauty – Your Beauty, Your Way
+
+## Purpose
+
+The UBeauty website allows users to explore beauty services, discover skilled specialists, and view treatment portfolios — all in one elegant, easy-to-navigate platform. The goal is to provide a clean, responsive, professional experience that works perfectly on all devices.
+
+## Value to Users
+
+- Browse a wide range of beauty services instantly.
+- Discover experienced specialists and view their portfolios.
+- Access the website easily on mobile, tablet, or desktop.
+- Enjoy a modern visual layout, animations, and smooth navigation.
+
+# Project Links
+
+Live Website
+https://hannagreentree.github.io/ibeauty/
+GitHub Repository
+https://github.com/HannaGreentree/iBeauty
+Issue Tracker
+https://github.com/HannaGreentree/iBeauty/issues
+Wireframes Folder
+https://github.com/HannaGreentree/iBeauty/tree/main/wireframes
+Testing File (Testing.md)
+https://github.com/HannaGreentree/iBeauty/blob/main/TESTING.md
+HTML & CSS Validation
+HTML Validator
+https://validator.w3.org/nu/
+CSS Validator
+https://jigsaw.w3.org/css-validator/
+
+---
+
+# HTML, CSS and JavaScript Validation
+
+## HTML Validator
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fhannagreentree.github.io%2Ficook%2F ??????????
+
+## CSS Validator
+https://jigsaw.w3.org/css-validator/
+
+## JavaScript Validator 
+
+---
+
+# 🚀 Deployment Procedure
+Clone the repository:
+
+git clone https://github.com/HannaGreentree/iBeauty.git
+
+Open the project folder in VS Code.
+Open index.html in the browser.
+Live Deployment:
+GitHub Pages: https://hannagreentree.github.io/ibeauty/
+
+# Wireframes
+
+### Desktop Wireframes
+![Home page]
+(https://www.canva.com/design/DAGtnpmxvHY/pfgtaUJWTmaK2Vor23m0BA/edit?utm_content=DAGtnpmxvHY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+![Laser Hair & Tattoo removal page]
+(https://www.canva.com/design/DAGtvapvLU4/mmdGn-2LDFqRlDbc6Ug9UA/edit?utm_content=DAGtvapvLU4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+![Manicur & Pedicure page]
+(https://www.canva.com/design/DAGulmIyh18/gStacu1pzNjJzMIPrjygyw/edit?utm_content=DAGulmIyh18&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+![Face page]
+(https://www.canva.com/design/DAGtxpJm4Ic/B6-8KNNaQmp_W9LPnRxRCg/edit?utm_content=DAGtxpJm4Ic&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+### Mobile Wireframes
+![Mobile](images/UBeautyMobile.jpg)
+
+
+# Screenshots
+
+### Desktop Screenshots
+![Home page](images/user-desktop-home.png)
+User story: “As a user, I want to explore beauty services quickly.”
+![Laser hair & Tattoo removal](images/user-desktop-service-info.png)
+User story: “As a user, I want clear information on each beauty service and price.”
+![Beauty Injectons](images/user-desktop-results.png)
+User story: “As a user, I want to view before/after results.”
+![Home page City options](images/user-desktop-city-choice.png)
+User story: “As a user, I want to find specialists by city.”
+
+### Mobile Screenshots
+
+User story: “As a user, I want simple navigation on my phone.”
+
+User story: “As a user, I want clean layout on small screens.”
+
+# 3.3 Attribution / References
+This project contains code, images, fonts, and ideas adapted from external resources.
+
+## Code Inspiration & Tutorials
+- General HTML/CSS/JS help: ChatGPT
+- Responsive navigation concepts: https://www.w3schools.com
+- JavaScript filtering/animation logic: https://codepen.io
+- Layout & element behaviour: https://developer.mozilla.org
+
+# Media (Images)
+- Specialist and service photos: User-provided / https://stock.adobe.com / https://pixabay.com
+- Backgrounds and decorative images: https://pexels.com / https://unsplash.com
+
+# Fonts & Icons
+- Google Fonts – Nunito Sans, Dancing Script / https://fonts.google.com
+- Icons – Google Material Symbols / https://fonts.google.com/icons
+
+# Tools Used
+- Visual Studio Code (VS Code)
+- Git & GitHub
+- GitHub Pages (deployment)
+
+# Version Control (M iv)
+
+### Overview
+Version control was managed using VS Code and later GitHub. The project was completed before using GitHub consistently, so commit history was recreated to reflect development stages.
+
+### Commit Timeline
+Step|       Commit Message	                     |    Description
+1	|  Add initial HTML structure	                 |  Base layout added.
+2	|  Link CSS and create responsive file	       | Added main & responsive stylesheets.
+3	|  Add hero section and introductory content	 |  Built homepage introduction.
+4	|  Style navigation and header	               |  Added responsive nav styling.
+5	|  Add services section and cards	             |  Built service categories.
+6	|  Add specialist profiles with grid layout	   |  Built portfolio display.
+7	|  Make layout responsive for all screens	     |  Added media queries.
+8	|  Add location filter	                       |  Implemented JS city filtering.
+9	|  Validate HTML/CSS and fix issues	           |  Passed W3C validator tests.
+10 | Add footer and contact links	               |  Final footer and icons.
+11 | Create README.md and Testing.md	           |  Documented full project.
+12 | Deploy to GitHub                            |  Pages	Live version launched.
+
+---
+
+# 5.1 Manual Testing
+Manual testing was completed on all devices and browsers.
+https://github.com/HannaGreentree/iBeauty/blob/main/TESTING.md
+
+### Summary
+- No broken links found.
+- All interactive features work correctly.
+- All pages validated successfully with HTML & CSS validators.
+- Website operates smoothly and meets accessibility expectations.
+
+# 5.4 Code Clean-Up
+- Removed unused CSS, JS, and HTML
+- Kept only essential explanatory comments
+- Ensured consistent formatting and indentation
+
+# 5.5 Internal Link Testing
+
+### Internal Links Tested:
+- Home → index.html
+- Services → #services
+- Specialists → #specialists
+- Locations → #locations
+- Contact → #contact
+- Logo → Scrolls to top
+
+### Results
+- All internal links work
+- Mobile and desktop navigation behave consistently
+
+# Project Rationale (M v)
+The iBeauty website was built to support beauty specialists across the UK by helping clients find services, view portfolios, and contact professionals easily.
+
+### Target Audience
+- Clients seeking beauty treatments
+- Users looking for Ukrainian specialists
+- People comparing services and prices
+- Mobile-first users
+
+### Value
+- Professional presentation
+- Fast access to specialists and services
+- Responsive and accessible design
+
+# M(vii) Development Note
+The project was originally developed before GitHub was used fully.
+Commits were recreated to document the process accurately.
+
+# Honest Statement
+This README reflects all stages of planning, building, testing, and deploying the iBeauty website.
+All external sources are acknowledged, and the project meets assessment criteria.
+
+# Attribution Statement
+All code is written by me unless stated otherwise.
+Any external snippets or inspirations are credited above.
+
+
+
+
 #Structured Rationale
 The U Beauty project was developed to provide users with a streamlined, visually appealing, and user-friendly platform for discovering and accessing beauty and wellness services. In today’s fast-paced world, users often struggle to find trustworthy service providers, browse portfolios, and book appointments efficiently. This project addresses these challenges by offering an intuitive website experience that highlights services, specialists, and locations in a clear, engaging manner.
 Purpose
