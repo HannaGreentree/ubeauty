@@ -28,7 +28,7 @@ All pages passed validation with **no critical errors**.
   ![Eyelashes Page HTML Validation](images/validation/html-eyelashes-page.png)
 
 - ✅ Face & Hair Page (`facehair.html`)  
-  ![Face & Hair Page HTML Validation](images/validation/html-facehair-page.png)
+  ![Face & Hair Page HTML Validation](images/validation/html-face-hair-page.png)
 
 - ✅ Injections Page (`injections.html`)  
   ![Injections Page HTML Validation](images/validation/html-injections-page.png)
@@ -54,7 +54,7 @@ All pages passed validation with **no critical errors**.
   ![Portsmouth Validation](images/validation/html-portsmouth-page.png)
 
 - ✅ Southampton  
-  ![Southampton Validation](images/validation/html-southampton-page.png)
+  ![Southampton Validation](images/validation/html-southamton-page.png)
 
 - ✅ Whiteley  
   ![Whiteley Validation](images/validation/html-whiteley-page.png)
