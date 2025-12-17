@@ -33,32 +33,23 @@ iBeauty provides a streamlined, visually appealing, and user-friendly platform f
 
 ## User Stories
 
-1. As a user, I want to view the team of specialists with their portfolios, so I can choose the right professional for my needs.  
-   ![User Story 1](images/story-screenshots/user-desktop-home.png)
+![Home page](images/story-screenshots/user-desktop-home.png)
+User story: “As a user, I want to explore beauty services quickly.”
+![Laser hair & Tattoo removal](images/story-screenshots/user-desktop-servicel-info.png)
+User story: “As a user, I want clear information on each beauty service and price.”
+![Beauty Injectons](images/story-screenshots/user-desktop-results.png)
+User story: “As a user, I want to view before/after results.”
+![Home page City options](images/story-screenshots/user-desktop-city-choice.png)
+User story: “As a user, I want to find specialists by city.”
 
-2. As a user, I want to filter services by city, so I can find convenient options near me.  
-   ![User Story 2](images/user-stories/user-story-2.png)
+### Mobile Screenshots
 
-3. As a user, I want an engaging homepage with animations and visual cues, so the website feels modern and interactive.  
-   ![User Story 3](images/user-stories/user-story-3.png)
-
-4. As a mobile user, I want the navigation and content to adapt to my device, so I can access services easily on the go.  
-   ![User Story 4](images/user-stories/user-story-4.png)
-
-5. As a returning user, I want a consistent and intuitive layout, so I can quickly find information I need without confusion.  
-   ![User Story 5](images/user-stories/user-story-5.png)
-
-6. As a user, I want to easily contact specialists through multiple channels (phone, WhatsApp, social media), so I can book services conveniently.  
-   ![User Story 6](images/user-stories/user-story-6.png)
+![Contact page City options](images/story-screenshots/user-mobile-social-media.png)
+User story: “As a user, I want to easily contact specialists through multiple channels (phone, WhatsApp, social media), so I can book services conveniently.”
+![Home page Layout](images/story-screenshots/user-mobile.png)
+User story: “As a user, I want clean layout on small screens.”
 
 ---
-![User Story 1](images/user-stories/user-story-1.png)
-![User Story 2](images/user-stories/user-story-2.png)
-![User Story 3](images/user-stories/user-story-3.png)
-![User Story 4](images/user-stories/user-story-4.png)
-![User Story 5](images/user-stories/user-story-5.png)
-![User Story 6](images/user-stories/user-story-6.png)
-
 
 ## Features
 
