@@ -57,10 +57,10 @@ All pages passed validation with **no critical errors**.
   ![Southampton Validation](images/validation/html-southampton.png)
 
 - ✅ Whiteley  
-  ![Whiteley Validation](images/validation/html-whiteley.png)
+  ![Whiteley Validation](images/validation/ubeauty-whiteley.png)
 
 - ✅ Winchester  
-  ![Winchester Validation](images/validation/html-winchester.png)
+  ![Winchester Validation](images/validation/ubeauty-winchester.png)
 
 ---
 
