@@ -34,7 +34,7 @@ iBeauty provides a streamlined, visually appealing, and user-friendly platform f
 ## User Stories
 
 1. As a user, I want to view the team of specialists with their portfolios, so I can choose the right professional for my needs.  
-   ![User Story 1](images/user-stories/user-story-1.png)
+   ![User Story 1](images/story-screenshots/user-desktop-home.png)
 
 2. As a user, I want to filter services by city, so I can find convenient options near me.  
    ![User Story 2](images/user-stories/user-story-2.png)
