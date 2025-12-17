@@ -33,11 +33,23 @@ iBeauty provides a streamlined, visually appealing, and user-friendly platform f
 
 ## User Stories
 
-- As a user, I want to view the team of specialists with their portfolios, so I can choose the right professional for my needs.  
-- As a user, I want to filter services by city, so I can find convenient options near me.  
-- As a user, I want an engaging homepage with animations and visual cues, so the website feels modern and interactive.  
-- As a mobile user, I want the navigation and content to adapt to my device, so I can access services easily on the go.  
-- As a returning user, I want a consistent and intuitive layout, so I can quickly find information I need without confusion.  
+1. As a user, I want to view the team of specialists with their portfolios, so I can choose the right professional for my needs.  
+   ![User Story 1](images/user-stories/user-story-1.png)
+
+2. As a user, I want to filter services by city, so I can find convenient options near me.  
+   ![User Story 2](images/user-stories/user-story-2.png)
+
+3. As a user, I want an engaging homepage with animations and visual cues, so the website feels modern and interactive.  
+   ![User Story 3](images/user-stories/user-story-3.png)
+
+4. As a mobile user, I want the navigation and content to adapt to my device, so I can access services easily on the go.  
+   ![User Story 4](images/user-stories/user-story-4.png)
+
+5. As a returning user, I want a consistent and intuitive layout, so I can quickly find information I need without confusion.  
+   ![User Story 5](images/user-stories/user-story-5.png)
+
+6. As a user, I want to easily contact specialists through multiple channels (phone, WhatsApp, social media), so I can book services conveniently.  
+   ![User Story 6](images/user-stories/user-story-6.png)
 
 ---
 
@@ -160,15 +172,16 @@ Includes a **hamburger toggle** for mobile devices.
 
 ---
 
-## User Story Screenshots
+## Development Timeline / Actions Taken
 
-- ![User Story 1](images/user-stories/user-story-1.png)  
-- ![User Story 2](images/user-stories/user-story-2.png)  
-- ![User Story 3](images/user-stories/user-story-3.png)  
-- ![User Story 4](images/user-stories/user-story-4.png)  
-- ![User Story 5](images/user-stories/user-story-5.png)  
-- ![User Story 6](images/user-stories/user-story-6.png)  
-
+- **Initial Planning** – Project goals, wireframes, and content list  
+- **Setup** – Folder structure, HTML skeletons, linking CSS & JS  
+- **Design** – CSS layouts, fonts, header/footer, color scheme  
+- **Functionality** – JavaScript: hamburger menu, animations, filters, slideshows  
+- **Content Integration** – Real service & specialist information, alt text for accessibility  
+- **Testing & Validation** – Manual tests, HTML/CSS validation  
+- **Deployment** – Pushed to GitHub, enabled GitHub Pages, verified live site
+- 
 ---
 
 ## HTML, CSS & JS Validation
@@ -191,8 +204,8 @@ https://eslint.org/demo
 
 **Live Website:** [iBeauty Live Site](https://hannagreentree.github.io/ibeauty/)  
 
-**Deployment Steps:**
-1. Clone the repository:  
+**Deployment Steps:
+Clone the repository:  
 ```bash
 git clone https://github.com/HannaGreentree/iBeauty.git
 
@@ -232,20 +245,27 @@ Manual testing was completed and is documented in [TESTING.md](https://github.co
 
 ---
 
-## Author
+## Project Rationale
 
-**Hanna Greentree**  
-Project developed as part of Dynamic Front-End Web Development coursework  
+The **U Beauty / iBeauty** project was developed to provide users with a **streamlined, visually appealing, and user-friendly platform** for discovering and accessing beauty and wellness services. In today’s fast-paced world, users often struggle to find trustworthy service providers, browse portfolios, and book appointments efficiently. This project addresses these challenges by offering an **intuitive website experience** that highlights services, specialists, and locations in a clear, engaging manner.
 
----
+**Purpose:**  
+- Showcase services and specialists with rich visual content (animated images, slideshows).  
+- Enable easy navigation between pages and sections, including mobile-friendly designs.  
+- Offer location-based filtering so users can find services near them quickly.  
+- Provide an engaging, interactive interface that encourages exploration and repeat visits.  
 
-## Notes
+**Target Audience:**  
+- Beauty and wellness clients seeking information about services, specialists, and locations.  
+- Potential new clients who want a visually appealing, easy-to-navigate platform.  
+- Mobile users who require a seamless experience across devices.  
 
-- HTML, CSS, JS separated for clarity and maintainability  
-- CSS passes the Jigsaw validator  
-- HTML passes the W3C validator  
-- Semantic markup, accessibility, and responsive layouts applied  
-- Consistent file naming, indentation, and comments improve readability  
+**User Stories:**  
+- As a user, I want to view the team of specialists with their portfolios, so I can choose the right professional.  
+- As a user, I want to filter services by city, so I can find convenient options near me.  
+- As a user, I want an engaging homepage with animations and visual cues, so that the website feels modern and interactive.  
+- As a mobile user, I want the navigation and content to adapt to my device, so that I can access services easily on the go.  
+- As a returning user, I want a consistent and intuitive layout, so I can quickly find information I need without confusion.  
 
 ---
 
