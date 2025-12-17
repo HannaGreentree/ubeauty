@@ -48,19 +48,19 @@ All pages passed validation with **no critical errors**.
   ![Gosport Validation](images/validation/html-gosport.png)
 
 - ✅ London  
-  ![London Validation](images/validation/html-london.png)
+  ![London Validation](images/validation/html-london-page.png)
 
 - ✅ Portsmouth  
-  ![Portsmouth Validation](images/validation/html-portsmouth.png)
+  ![Portsmouth Validation](images/validation/html-portsmouth-page.png)
 
 - ✅ Southampton  
-  ![Southampton Validation](images/validation/html-southampton.png)
+  ![Southampton Validation](images/validation/html-southampton-page.png)
 
 - ✅ Whiteley  
-  ![Whiteley Validation](images/validation/ubeauty-whiteley.png)
+  ![Whiteley Validation](images/validation/html-whiteley-page.png)
 
 - ✅ Winchester  
-  ![Winchester Validation](images/validation/ubeauty-winchester.png)
+  ![Winchester Validation](images/validation/html-winchester-page.png)
 
 ---
 
