@@ -1,42 +1,99 @@
-# HTML, CSS & JavaScript Validation
+# Testing results
+
+## HTML, CSS & JavaScript Validation
+
+---
 
 ## HTML Validation
-All HTML files in the **U Beauty** project were validated using the official **W3C HTML Validator** to ensure correct semantic structure, accessibility compliance, and standards-based code.
+
+All HTML files in the **U Beauty (iBeauty)** project were validated using the official **W3C HTML Validator** to ensure correct semantic structure, accessibility compliance, and standards-based code.
 
 **Validator used:**  
 https://validator.w3.org/nu/
 
 All pages passed validation with **no critical errors**.
+
+### Validation Screenshots
+
+- ✅ Homepage (`index.html`)  
+  ![Homepage HTML Validation](images/validation/html-home-page.png)
+
+- ✅ Cleaning Page (`cleaning.html`)  
+  ![Cleaning Page HTML Validation](images/validation/html-cleaning-page.png)
+
+- ✅ Contact Page (`contact.html`)  
+  ![Contact Page HTML Validation](images/validation/html-contact-page.png)
+
+- ✅ Eyelashes Page (`eyelashes.html`)  
+  ![Eyelashes Page HTML Validation](images/validation/html-eyelashes.png)
+
+- ✅ Face & Hair Page (`facehair.html`)  
+  ![Face & Hair Page HTML Validation](images/validation/html-facehair.png)
+
+- ✅ Injections Page (`injections.html`)  
+  ![Injections Page HTML Validation](images/validation/html-injections.png)
+
+- ✅ Laser Page (`laser.html`)  
+  ![Laser Page HTML Validation](images/validation/html-laser.png)
+
+- ✅ Nails Page (`nails.html`)  
+  ![Nails Page HTML Validation](images/validation/html-nails.png)
+
+### Location Subpages
+
+- ✅ Fareham  
+  ![Fareham Validation](images/validation/html-fareham.png)
+
+- ✅ Gosport  
+  ![Gosport Validation](images/validation/html-gosport.png)
+
+- ✅ London  
+  ![London Validation](images/validation/html-london.png)
+
+- ✅ Portsmouth  
+  ![Portsmouth Validation](images/validation/html-portsmouth.png)
+
+- ✅ Southampton  
+  ![Southampton Validation](images/validation/html-southampton.png)
+
+- ✅ Whiteley  
+  ![Whiteley Validation](images/validation/html-whiteley.png)
+
+- ✅ Winchester  
+  ![Winchester Validation](images/validation/html-winchester.png)
+
 ---
 
 ## HTML Validation Summary
 
-✅ All HTML files use **semantic markup** (`header`, `nav`, `main`, `section`, `footer`)  
-✅ All images include **alt attributes** for accessibility  
-✅ Heading hierarchy is logical and consistent  
-✅ No duplicate IDs or invalid nesting  
-✅ Code complies with **W3C HTML5 standards**
-
----
-
-## Conclusion
-
-The U Beauty website meets all **HTML validation requirements** for the Dynamic Front-End Project.  
-All pages were tested individually and confirmed to be **standards-compliant, accessible, and error-free**.
+- Semantic HTML5 structure (`header`, `nav`, `main`, `section`, `footer`)
+- Logical heading hierarchy
+- All images include descriptive `alt` attributes
+- No duplicate IDs or invalid nesting
+- Fully compliant with W3C HTML5 standards
 
 ---
 
 ## CSS Validation
-All custom CSS was validated using the W3C Jigsaw CSS Validator.
 
-- styles.css
-- responsive.css
+All custom CSS files were validated using the **W3C Jigsaw CSS Validator**.
 
-Vendor-specific warnings (e.g. `::-webkit-scrollbar`) were noted and accepted.
+**Files tested:**
+- `styles.css`
+- `responsive.css`
+
+**Validator used:**  
+https://jigsaw.w3.org/css-validator/
 
 ![CSS Validation](images/validation/css-validation.png)
 
+**Result:**
+- Passed validation
+- Vendor-specific warnings only (e.g. `::-webkit-scrollbar`)
+- No errors affecting layout or accessibility
+
 ---
+
 
 ## JavaScript Validation
 All JavaScript was manually tested in browser developer tools.
@@ -97,11 +154,16 @@ function main() {
 }
 main();
 
+### Results
 
+- No console errors
+- ES6 syntax used correctly
+- Functions scoped safely
+- Defensive checks prevent runtime errors
 
+---
 
-
-# Manual Testing
+## Manual Testing
 Manual testing was completed on all major devices and browsers.
 
 ### Functionality
@@ -137,7 +199,7 @@ Manual testing was completed on all major devices and browsers.
 ✅ No horizontal scrolling anywhere
 ✅ Sub-pages display correctly at all breakpoints
 
-# Devices Tested
+### Devices Tested
 ✅ iPhone 12 / 13 / 15
 ✅ Samsung Galaxy S21 / S23
 ✅ iPad 10.2"
