@@ -52,6 +52,13 @@ iBeauty provides a streamlined, visually appealing, and user-friendly platform f
    ![User Story 6](images/user-stories/user-story-6.png)
 
 ---
+![User Story 1](images/user-stories/user-story-1.png)
+![User Story 2](images/user-stories/user-story-2.png)
+![User Story 3](images/user-stories/user-story-3.png)
+![User Story 4](images/user-stories/user-story-4.png)
+![User Story 5](images/user-stories/user-story-5.png)
+![User Story 6](images/user-stories/user-story-6.png)
+
 
 ## Features
 
