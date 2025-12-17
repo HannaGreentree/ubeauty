@@ -25,27 +25,27 @@ All pages passed validation with **no critical errors**.
   ![Contact Page HTML Validation](images/validation/html-contact-page.png)
 
 - ✅ Eyelashes Page (`eyelashes.html`)  
-  ![Eyelashes Page HTML Validation](images/validation/html-eyelashes.png)
+  ![Eyelashes Page HTML Validation](images/validation/html-eyelashes-page.png)
 
 - ✅ Face & Hair Page (`facehair.html`)  
-  ![Face & Hair Page HTML Validation](images/validation/html-facehair.png)
+  ![Face & Hair Page HTML Validation](images/validation/html-facehair-page.png)
 
 - ✅ Injections Page (`injections.html`)  
-  ![Injections Page HTML Validation](images/validation/html-injections.png)
+  ![Injections Page HTML Validation](images/validation/html-injections-page.png)
 
 - ✅ Laser Page (`laser.html`)  
-  ![Laser Page HTML Validation](images/validation/html-laser.png)
+  ![Laser Page HTML Validation](images/validation/html-laser-page.png)
 
 - ✅ Nails Page (`nails.html`)  
-  ![Nails Page HTML Validation](images/validation/html-nails.png)
+  ![Nails Page HTML Validation](images/validation/html-nails-page.png)
 
 ### Location Subpages
 
 - ✅ Fareham  
-  ![Fareham Validation](images/validation/html-fareham.png)
+  ![Fareham Validation](images/validation/html-fareham-page.png)
 
 - ✅ Gosport  
-  ![Gosport Validation](images/validation/html-gosport.png)
+  ![Gosport Validation](images/validation/html-gosport-page.png)
 
 - ✅ London  
   ![London Validation](images/validation/html-london-page.png)
