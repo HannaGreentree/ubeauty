@@ -102,7 +102,7 @@ All JavaScript was manually tested in browser developer tools.
 - ES6 syntax validated
 - All interactive features work as expected
 
-![JavaScript Console Validation](images/validation/js-console.png)
+![JavaScript Console Validation](images/validation/java-script-validation.png)
 
 
 ✅ JavaScript Validation Result
