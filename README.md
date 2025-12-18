@@ -206,7 +206,7 @@ https://eslint.org/demo
 Clone the repository:  
 ```bash
 git clone https://github.com/HannaGreentree/iBeauty.git
-
+```
 ---
 
 ## Deployment & Usage
@@ -271,6 +271,7 @@ The **U Beauty / iBeauty** project was developed to provide users with a **strea
 # Bugs Fixed & Code Improvements
 
 During development and testing, several issues were identified and resolved to improve functionality, responsiveness, reliability, and accessibility.
+
 
 ---
 
