@@ -465,6 +465,160 @@ No horizontal scrolling occurs on mobile devices.
 
 ---
 
+## Code snippets that being involved and sources 
+
+This project was developed primarily using my own HTML, CSS, and JavaScript code.  
+Where external examples, tutorials, or references were used, they were adapted, understood, and customised to fit the needs of the U Beauty / iBeauty website.
+
+This section clearly explains **what code was used**, **where it came from**, and **why it was implemented**, as required by the assessment criteria.
+
+---
+
+### 1. Mobile Navigation (Hamburger Menu)
+
+**What I used:**  
+A JavaScript toggle function to open and close the mobile navigation menu.
+
+**Why I used it:**  
+To ensure the website is usable on mobile devices and meets responsive design requirements.
+
+**Source / Inspiration:**  
+W3Schools – Mobile Navigation Tutorial  
+https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+
+**How I used it:**  
+I adapted the logic to work with my own HTML structure, class names, and CSS styling.
+
+**File:** `js/script.js`
+
+```js
+function toggleMenu() {
+  const navLinks = document.getElementById("navLinks");
+  navLinks.classList.toggle("active");
+}
+```
+
+## 2. DOMContentLoaded Wrapper
+What I used:
+The DOMContentLoaded event to ensure JavaScript runs only after the HTML is loaded.
+Why I used it:
+To prevent JavaScript errors caused by elements not being available when scripts load.
+Source / Reference:
+MDN Web Docs – DOMContentLoaded
+https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+File: js/script.js
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // DOM-dependent JavaScript
+});
+
+
+## 3. Scroll-Based Image Animations (IntersectionObserver)
+What I used:
+The IntersectionObserver API to trigger animations when elements enter the viewport.
+Why I used it:
+To create smooth, modern animations without heavy performance cost and to improve user experience.
+Source / Reference:
+MDN Web Docs – IntersectionObserver
+https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+File: js/script.js
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("in-view");
+    }
+  });
+}, { threshold: 0.1 });
+
+
+## 4. Defensive JavaScript (Preventing Console Errors)
+What I used:
+Conditional checks before running slider-related JavaScript.
+Why I used it:
+Some pages do not include sliders, and this prevents runtime errors on those pages.
+Source / Reference:
+General JavaScript best practices (MDN / CodePen examples)
+File: js/slider.js
+
+
+if (slideshow && leftBtn && rightBtn) {
+  rightBtn.addEventListener("click", () => {
+    slideshow.scrollBy({ left: slideWidth, behavior: "smooth" });
+  });
+}
+
+
+## 5. Location Filtering Using Data Attributes
+What I used:
+A custom JavaScript filter function using data-* attributes.
+Why I used it:
+To allow users to filter services by city, improving usability and meeting dynamic front-end requirements.
+Source / Inspiration:
+CodePen examples for filtering lists
+https://codepen.io
+File: js/filter.js
+
+
+function filterServices(city) {
+  const services = document.querySelectorAll('.service');
+
+  services.forEach(service => {
+    service.style.display =
+      service.dataset.city === city ? 'block' : 'none';
+  });
+}
+
+
+## 6. Mobile Touch Interaction
+What I used:
+The touchstart event for interactive elements on mobile devices.
+Why I used it:
+Hover effects do not work on touch screens, so this ensures accessibility and usability.
+Source / Reference:
+MDN Web Docs – Touch Events
+https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
+File: js/script.js
+
+
+circle.addEventListener('touchstart', () => {
+  circle.classList.add('active');
+});
+
+
+## 7. CSS Layout & Responsiveness
+What I used:
+Flexbox, CSS Grid, and media queries.
+Why I used it:
+To maintain layout integrity across desktop, tablet, and mobile devices.
+Source / Reference:
+MDN Web Docs – Flexbox & Grid
+https://developer.mozilla.org
+Files:
+css/styles.css
+css/responsive.css
+
+## 8. Fonts & Icons
+Fonts:
+Nunito Sans
+Dancing Script
+Source:
+Google Fonts
+https://fonts.google.com
+Icons:
+Google Material Symbols
+https://fonts.google.com/icons
+
+Statement of Understanding
+All external code was studied, adapted, and customised to fit the structure and needs of this project.
+No code was copied blindly. Every feature was implemented with understanding and tested manually.
+All remaining HTML, CSS, and JavaScript not listed above was written entirely by Hanna Greentree.
+This satisfies the requirement for clear separation and attribution of external sources.
+
+---
+
 # M(vii) Development Note
 I originally completed the project before uploading it to GitHub. While working on it, I realised how important it is to use version control from the start, as it really helps with learning and tracking progress. 
 Because of this, I recreated the commits afterwards to better reflect how the project was developed.
