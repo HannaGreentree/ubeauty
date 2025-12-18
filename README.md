@@ -267,13 +267,215 @@ The **U Beauty / iBeauty** project was developed to provide users with a **strea
 
 ---
 
+
+# Bugs Fixed & Code Improvements
+
+During development and testing, several issues were identified and resolved to improve functionality, responsiveness, reliability, and accessibility.
+
+---
+
+## 1. Mobile Navigation Menu Not Opening
+
+**Issue**
+The hamburger menu did not toggle the navigation links on mobile devices.
+**Cause**
+The navigation container class was not being toggled correctly.
+**Fix Applied**
+A JavaScript toggle function was added to control the mobile menu state.
+**File:** `js/script.js`
+
+```js
+function toggleMenu() {
+  const navLinks = document.getElementById("navLinks");
+  navLinks.classList.toggle("active");
+}
+```
+**Result**
+The navigation menu opens and closes correctly on all mobile screen sizes.
+
+---
+
+## 2. JavaScript Errors on Pages Without Slider
+
+**Issue**
+Console errors occurred on pages that did not include the specialist slideshow.
+**Cause**
+JavaScript attempted to access slider elements that were not present on some pages.
+**Fix Applied**
+A defensive condition check was added before attaching event listeners.
+**File:** `js/slider.js`
+
+```js
+if (slideshow && leftBtn && rightBtn) {
+  rightBtn.addEventListener("click", () => {
+    slideshow.scrollBy({ left: slideWidth, behavior: "smooth" });
+  });
+
+  leftBtn.addEventListener("click", () => {
+    slideshow.scrollBy({ left: -slideWidth, behavior: "smooth" });
+  });
+}
+```
+**Result**
+No console errors occur on pages without sliders.
+
+---
+
+## 3. JavaScript Running Before HTML Loaded
+
+**Issue**
+Some JavaScript features did not work consistently on page load.
+**Cause**
+Scripts were running before DOM elements were fully loaded.
+**Fix Applied**
+DOM-dependent code was wrapped inside a `DOMContentLoaded` event listener.
+**File:** `js/script.js`
+
+```js
+document.addEventListener("DOMContentLoaded", () => {
+  const animatedImages = document.querySelectorAll(
+    ".moving-from-top, .moving-from-left, .moving-from-right"
+  );
+});
+```
+**Result**
+All JavaScript functionality loads reliably across browsers.
+
+---
+
+## 4. Image Animations Not Triggering on Scroll
+
+**Issue**
+Homepage image animations were not triggering when images entered the viewport.
+**Cause**
+Scroll detection was not implemented.
+**Fix Applied**
+An `IntersectionObserver` was added to trigger animations when images come into view.
+**File:** `js/script.js`
+
+```js
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+      }
+    });
+  },
+  { threshold: 0.1 }
+);
+```
+
+---
+
+## 5. Location Filter Displaying Incorrect Services
+
+**Issue**
+Services from all cities were displayed at the same time.
+**Cause**
+No conditional filtering was applied.
+**Fix Applied**
+A filter function was created using data attributes.
+**File:** `js/filter.js`
+
+```js
+function filterServices(city) {
+  const services = document.querySelectorAll('.service');
+
+  services.forEach((service) => {
+    service.style.display =
+      service.dataset.city === city ? 'block' : 'none';
+  });
+}
+```
+**Result**
+Only services matching the selected city are displayed.
+
+---
+
+## 6. Mobile Touch Interaction Not Working on Circle Row
+
+**Issue**
+Interactive circle elements did not respond on touch devices.
+**Cause**
+Hover effects do not work on mobile devices.
+**Fix Applied**
+A `touchstart` event was added for mobile interaction.
+**File:** `js/script.js`
+
+```js
+document.querySelectorAll('.laser-circle').forEach((circle) => {
+  circle.addEventListener('touchstart', () => {
+    circle.classList.add('active');
+
+    setTimeout(() => {
+      circle.classList.remove('active');
+    }, 500);
+  });
+});
+```
+
+---
+
+## 7. HTML Validation Errors (Missing Alt Attributes)
+
+**Issue**
+W3C validator flagged missing `alt` attributes on images.
+**Fix Applied**
+Descriptive alt text was added to all image elements.
+**File:** Multiple HTML files
+
+```html
+<img src="images/laser.jpg" alt="Laser hair removal specialist at work">
+```
+**Result**
+HTML passes W3C validation and improves accessibility.
+
+---
+
+## 8. Layout Breaking on Small Screens
+
+**Issue**
+Some sections caused horizontal scrolling on mobile devices.
+**Cause**
+Fixed widths were used instead of flexible units.
+**Fix Applied**
+Replaced fixed widths with responsive units and added media queries.
+**File:** `css/responsive.css`
+
+```css
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+```
+**Result**
+No horizontal scrolling occurs on mobile devices.
+
+---
+
+## Summary
+
+* All identified bugs were fixed through testing and iteration
+* JavaScript is stable across all pages
+* No console errors remain
+* Site is fully responsive and accessible
+* All fixes were verified through manual testing and validation
+
+---
+
+# M(vii) Development Note
+I originally completed the project before uploading it to GitHub. While working on it, I realised how important it is to use version control from the start, as it really helps with learning and tracking progress. 
+Because of this, I recreated the commits afterwards to better reflect how the project was developed.
+
+---
+
 ## Honest Statement on AI Use
 
 - All code, structure, and design decisions were created by **Hanna Greentree**.  
 - AI tools (e.g., ChatGPT) were only used to **clarify syntax, provide guidance, or debug small JS snippets**, not to create the project content or structure.  
  
 ---
-
 
 ## Author
 
