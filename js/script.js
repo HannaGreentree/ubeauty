@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 //CIRCLE ROW ALL PAGES MOBILE
+//**Source / Reference:** MDN Web Docs – Touch Events https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
 
   document.querySelectorAll('.laser-circle').forEach(circle => {
     circle.addEventListener('touchstart', () => {
