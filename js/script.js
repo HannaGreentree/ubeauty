@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 //PORTFOLIO SLIDE SHOW
+//**Source / Reference:** General JavaScript best practices (MDN / CodePen examples)
 
 document.addEventListener("DOMContentLoaded", () => {
   const slideshow = document.querySelector(".specialist-slideshow");
