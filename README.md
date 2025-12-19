@@ -31,25 +31,6 @@ iBeauty provides a streamlined, visually appealing, and user-friendly platform f
 
 ---
 
-## User Stories
-
-![Home page](images/story-screenshots/user-desktop-home.png)
-User story: “As a user, I want to explore beauty services quickly.”
-![Laser hair & Tattoo removal](images/story-screenshots/user-desktop-servicel-info.png)
-User story: “As a user, I want clear information on each beauty service and price.”
-![Beauty Injectons](images/story-screenshots/user-desktop-results.png)
-User story: “As a user, I want to view before/after results.”
-![Home page City options](images/story-screenshots/user-desktop-city-choice.png)
-User story: “As a user, I want to find specialists by city.”
-
-### Mobile Screenshots
-
-![Contact page City options](images/story-screenshots/user-mobile-social-media.png)
-User story: “As a user, I want to easily contact specialists through multiple channels (phone, WhatsApp, social media), so I can book services conveniently.”
-![Home page Layout](images/story-screenshots/user-mobile.png)
-User story: “As a user, I want clean layout on small screens.”
-
----
 
 ## Features
 
@@ -170,19 +151,9 @@ Includes a **hamburger toggle** for mobile devices.
 
 ---
 
-## Development Timeline / Actions Taken
-
-- **Initial Planning** – Project goals, wireframes, and content list  
-- **Setup** – Folder structure, HTML skeletons, linking CSS & JS  
-- **Design** – CSS layouts, fonts, header/footer, color scheme  
-- **Functionality** – JavaScript: hamburger menu, animations, filters, slideshows  
-- **Content Integration** – Real service & specialist information, alt text for accessibility  
-- **Testing & Validation** – Manual tests, HTML/CSS validation  
-- **Deployment** – Pushed to GitHub, enabled GitHub Pages, verified live site
-- 
----
 
 ## HTML, CSS & JS Validation
+
 
 ### HTML Validator
 ✅ All pages passed W3C validation  
@@ -196,6 +167,7 @@ https://jigsaw.w3.org/css-validator/
 ✅ Custom JS passes ESLint/syntax checks  
 https://eslint.org/demo  
 
+All completed and is documented in [TESTING.md](https://github.com/HannaGreentree/iBeauty/blob/main/TESTING.md)  
 ---
 
 ## Deployment
@@ -258,12 +230,21 @@ The **U Beauty / iBeauty** project was developed to provide users with a **strea
 - Potential new clients who want a visually appealing, easy-to-navigate platform.  
 - Mobile users who require a seamless experience across devices.  
 
-**User Stories:**  
-- As a user, I want to view the team of specialists with their portfolios, so I can choose the right professional.  
-- As a user, I want to filter services by city, so I can find convenient options near me.  
-- As a user, I want an engaging homepage with animations and visual cues, so that the website feels modern and interactive.  
-- As a mobile user, I want the navigation and content to adapt to my device, so that I can access services easily on the go.  
-- As a returning user, I want a consistent and intuitive layout, so I can quickly find information I need without confusion.  
+**User Stories:**
+
+![Home page](images/story-screenshots/user-desktop-home.png)
+User story: “As a user, I want to explore beauty services quickly.”
+![Laser hair & Tattoo removal](images/story-screenshots/user-desktop-servicel-info.png)
+User story: “As a user, I want clear information on each beauty service and price.”
+![Beauty Injectons](images/story-screenshots/user-desktop-results.png)
+User story: “As a user, I want to view before/after results.”
+![Home page City options](images/story-screenshots/user-desktop-city-choice.png)
+User story: “As a user, I want to find specialists by city.”
+![Contact page City options](images/story-screenshots/user-mobile-social-media.png)
+User story: “As a user, I want to easily contact specialists through multiple channels (phone, WhatsApp, social media), so I can book services conveniently.”
+![Home page Layout](images/story-screenshots/user-mobile.png)
+User story: “As a user, I want clean layout on small screens.”
+
 
 ---
 
@@ -465,7 +446,7 @@ No horizontal scrolling occurs on mobile devices.
 
 ---
 
-## Code snippets that being involved and sources 
+## Code snippets that I used and its sources 
 
 This project was developed primarily using my own HTML, CSS, and JavaScript code.  
 Where external examples, tutorials, or references were used, they were adapted, understood, and customised to fit the needs of the U Beauty / iBeauty website.
@@ -478,17 +459,13 @@ This section clearly explains **what code was used**, **where it came from**, an
 
 **What I used:**  
 A JavaScript toggle function to open and close the mobile navigation menu.
-
 **Why I used it:**  
 To ensure the website is usable on mobile devices and meets responsive design requirements.
-
 **Source / Inspiration:**  
 W3Schools – Mobile Navigation Tutorial  
 https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
-
 **How I used it:**  
 I adapted the logic to work with my own HTML structure, class names, and CSS styling.
-
 **File:** `js/script.js`
 
 ```js
@@ -499,14 +476,14 @@ function toggleMenu() {
 ```
 
 ## 2. DOMContentLoaded Wrapper
-What I used:
+**What I used:**
 The DOMContentLoaded event to ensure JavaScript runs only after the HTML is loaded.
-Why I used it:
+**Why I used it:**
 To prevent JavaScript errors caused by elements not being available when scripts load.
-Source / Reference:
+**Source / Reference:**
 MDN Web Docs – DOMContentLoaded
 https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
-File: js/script.js
+**File:** js/script.js
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -515,14 +492,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 ## 3. Scroll-Based Image Animations (IntersectionObserver)
-What I used:
+**What I used:**
 The IntersectionObserver API to trigger animations when elements enter the viewport.
-Why I used it:
+**Why I used it:**
 To create smooth, modern animations without heavy performance cost and to improve user experience.
-Source / Reference:
+**Source / Reference:**
 MDN Web Docs – IntersectionObserver
 https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
-File: js/script.js
+**File:** js/script.js
 
 
 const observer = new IntersectionObserver((entries) => {
@@ -535,13 +512,13 @@ const observer = new IntersectionObserver((entries) => {
 
 
 ## 4. Defensive JavaScript (Preventing Console Errors)
-What I used:
+**What I used:**
 Conditional checks before running slider-related JavaScript.
-Why I used it:
+**Why I used it:**
 Some pages do not include sliders, and this prevents runtime errors on those pages.
-Source / Reference:
+**Source / Reference:**
 General JavaScript best practices (MDN / CodePen examples)
-File: js/slider.js
+**File:** js/slider.js
 
 
 if (slideshow && leftBtn && rightBtn) {
@@ -552,14 +529,14 @@ if (slideshow && leftBtn && rightBtn) {
 
 
 ## 5. Location Filtering Using Data Attributes
-What I used:
+**What I used:**
 A custom JavaScript filter function using data-* attributes.
-Why I used it:
+**Why I used it:**
 To allow users to filter services by city, improving usability and meeting dynamic front-end requirements.
-Source / Inspiration:
+**Source / Inspiration:**
 CodePen examples for filtering lists
 https://codepen.io
-File: js/filter.js
+**File:** js/filter.js
 
 
 function filterServices(city) {
@@ -573,14 +550,14 @@ function filterServices(city) {
 
 
 ## 6. Mobile Touch Interaction
-What I used:
+**What I used:**
 The touchstart event for interactive elements on mobile devices.
-Why I used it:
+**Why I used it:**
 Hover effects do not work on touch screens, so this ensures accessibility and usability.
-Source / Reference:
+**Source / Reference:**
 MDN Web Docs – Touch Events
 https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
-File: js/script.js
+**File:** js/script.js
 
 
 circle.addEventListener('touchstart', () => {
@@ -589,29 +566,29 @@ circle.addEventListener('touchstart', () => {
 
 
 ## 7. CSS Layout & Responsiveness
-What I used:
+**What I used:**
 Flexbox, CSS Grid, and media queries.
-Why I used it:
+**Why I used it:**
 To maintain layout integrity across desktop, tablet, and mobile devices.
-Source / Reference:
+**Source / Reference:**
 MDN Web Docs – Flexbox & Grid
 https://developer.mozilla.org
-Files:
+**Files:**
 css/styles.css
 css/responsive.css
 
 ## 8. Fonts & Icons
-Fonts:
+**Fonts:**
 Nunito Sans
 Dancing Script
-Source:
+**Source:**
 Google Fonts
 https://fonts.google.com
-Icons:
+**Icons:**
 Google Material Symbols
 https://fonts.google.com/icons
 
-Statement of Understanding
+**Statement of Understanding**
 All external code was studied, adapted, and customised to fit the structure and needs of this project.
 No code was copied blindly. Every feature was implemented with understanding and tested manually.
 All remaining HTML, CSS, and JavaScript not listed above was written entirely by Hanna Greentree.
@@ -638,12 +615,4 @@ Because of this, I recreated the commits afterwards to better reflect how the pr
 Project developed as part of Dynamic Front-End Web Development coursework  
 
 ---
-
-## Notes
-
-- HTML, CSS, and JS separated for clarity and maintainability  
-- CSS passes Jigsaw validator  
-- HTML passes W3C validator  
-- Semantic markup, accessibility, and responsive layouts applied  
-- Consistent file naming, indentation, and comments improve readability
 
