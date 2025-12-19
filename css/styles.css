@@ -220,7 +220,8 @@ html, body {
 
   .img-box {
     overflow: hidden;
-    width: 100%;  
+    width: 100%; 
+    line-height: 0;  
   }
 
   .img-box img {
