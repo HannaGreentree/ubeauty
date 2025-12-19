@@ -596,7 +596,7 @@ This satisfies the requirement for clear separation and attribution of external 
 
 ---
 
-# M(vii) Development Note
+## M(vii) Development Note
 I originally completed the project before uploading it to GitHub. While working on it, I realised how important it is to use version control from the start, as it really helps with learning and tracking progress. 
 Because of this, I recreated the commits afterwards to better reflect how the project was developed.
 
@@ -612,7 +612,7 @@ Because of this, I recreated the commits afterwards to better reflect how the pr
 ## Author
 
 **Hanna Greentree**  
-Project developed as part of Dynamic Front-End Web Development coursework  
+Project developed as part of the Dynamic Front-End Web Development coursework  
 
 ---
 
