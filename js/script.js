@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 //LOCATION BY CITY HOME PAGE
+//**Source / Inspiration:** CodePen examples for filtering lists https://codepen.io
 
   function filterServices(city) {
   const services = document.querySelectorAll('.service');
