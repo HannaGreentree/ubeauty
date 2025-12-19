@@ -14,6 +14,7 @@ function toggleMenu() {
 
 //HOME PAGE MAIN SCREEN IMAGES 3,4,7 ANIMATION
 
+//https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 
 document.addEventListener("DOMContentLoaded", () => {
   const animatedImages = document.querySelectorAll(
