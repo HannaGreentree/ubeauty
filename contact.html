@@ -95,12 +95,10 @@
 
     <section class="contact-section">
       <h2>Join U-Beauty</h2>
-      <form
-        class="contact-form"
-        action="submit"
-        method="post"
-        enctype="multipart/form-data"
-      >
+      
+      <p id="formMessage" class="form-message" aria-live="polite" style="display:none;"></p>
+         <form class="contact-form" id="joinForm" enctype="multipart/form-data" novalidate>
+
         <label for="name">Full name / business name *</label>
         <input type="text" id="name" name="name" required />
 
