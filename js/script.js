@@ -90,6 +90,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("joinForm");
+  const msg = document.getElementById("formMessage");
+
+  if (!form) return;
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault(); // stops the POST -> no 405
+
+    // If you kept browser validation (no novalidate), this is optional.
+    // If you used novalidate, this ensures required fields are filled.
+    if (!form.checkValidity()) {
+      msg.style.display = "block";
+      msg.textContent = "Please complete the required fields (*) before submitting.";
+      msg.classList.remove("success");
+      msg.classList.add("error");
+      return;
+    }
+
+    // Success message
+    msg.style.display = "block";
+    msg.textContent = "Thank you for submitting the form! We’ll get back to you soon.";
+    msg.classList.remove("error");
+    msg.classList.add("success");
+
+    // Reset form (clears inputs, selects, files, checkboxes)
+    form.reset();
+
+    // Optional: scroll message into view (nice on mobile)
+    msg.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+});
 
 
 
