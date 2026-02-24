@@ -1,3 +1,7 @@
+
+console.log("script.js loaded ✅");
+
+
 //NAVIGATION MENU MOBILE
 
 function main() {
@@ -14,7 +18,6 @@ function toggleMenu() {
 
 //HOME PAGE MAIN SCREEN IMAGES 3,4,7 ANIMATION
 
-//https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 
 document.addEventListener("DOMContentLoaded", () => {
   const animatedImages = document.querySelectorAll(
@@ -36,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 //CIRCLE ROW ALL PAGES MOBILE
-//**Source / Reference:** MDN Web Docs – Touch Events https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
 
   document.querySelectorAll('.laser-circle').forEach(circle => {
     circle.addEventListener('touchstart', () => {
@@ -50,7 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 //LOCATION BY CITY HOME PAGE
-//**Source / Inspiration:** CodePen examples for filtering lists https://codepen.io
 
   function filterServices(city) {
   const services = document.querySelectorAll('.service');
@@ -66,7 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 //PORTFOLIO SLIDE SHOW
-//**Source / Reference:** General JavaScript best practices (MDN / CodePen examples)
 
 document.addEventListener("DOMContentLoaded", () => {
   const slideshow = document.querySelector(".specialist-slideshow");
@@ -90,60 +90,43 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+console.log("script.js loaded ✅");
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("joinForm");
   const msg = document.getElementById("formMessage");
 
-  if (!form) return;
+  console.log("joinForm found?", !!form);
+  console.log("formMessage found?", !!msg);
+
+  if (!form || !msg) return;
 
   form.addEventListener("submit", (e) => {
-    e.preventDefault(); // stops the POST -> no 405
+    e.preventDefault();
+    console.log("submit intercepted ✅");
 
-    // If you kept browser validation (no novalidate), this is optional.
-    // If you used novalidate, this ensures required fields are filled.
+    const checkedService =
+      form.querySelectorAll('input[name="service[]"]:checked').length;
+
     if (!form.checkValidity()) {
+      form.reportValidity();
       msg.style.display = "block";
-      msg.textContent = "Please complete the required fields (*) before submitting.";
-      msg.classList.remove("success");
-      msg.classList.add("error");
+      msg.textContent =
+        "Please complete the required fields (*) before submitting.";
       return;
     }
 
-    // Success message
+    if (checkedService === 0) {
+      msg.style.display = "block";
+      msg.textContent = "Please select at least one service type.";
+      return;
+    }
+
     msg.style.display = "block";
-    msg.textContent = "Thank you for submitting the form! We’ll get back to you soon.";
-    msg.classList.remove("error");
-    msg.classList.add("success");
+    msg.textContent =
+      "Thank you for submitting the form! We’ll get back to you soon.";
 
-    // Reset form (clears inputs, selects, files, checkboxes)
     form.reset();
-
-    // Optional: scroll message into view (nice on mobile)
     msg.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
