@@ -95,10 +95,12 @@
 
     <section class="contact-section">
       <h2>Join U-Beauty</h2>
-      
-      <p id="formMessage" class="form-message" aria-live="polite" style="display:none;"></p>
-         <form class="contact-form" id="joinForm" enctype="multipart/form-data" novalidate>
-
+      <form
+        class="contact-form"
+        action="submit"
+        method="post"
+        enctype="multipart/form-data"
+      >
         <label for="name">Full name / business name *</label>
         <input type="text" id="name" name="name" required />
 
@@ -258,17 +260,18 @@
           />
         </div>
 
-       <div class="footer-center">
+        <div class="footer-center">
           <p class="follow-text">Follow us:</p>
           <div class="social-icons">
-           <a href="https://www.facebook.com/share/17qmtHKpVS/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
-          <img src="images/Facebook.png" alt="Facebook"></a>
-          
-        <a href="https://www.instagram.com/anna.greentree" target="_blank" rel="noopener noreferrer">
-          <img src="images/Instagram.png" alt="Instagram"></a>
-          
-        <a href="https://x.com/hannagreentree?s=21&t=LqGeCmA6QqptjCQeazTU9g" target="_blank" rel="noopener noreferrer">
-          <img src="images/WhatsApp.png" alt="WhatsApp"></a>
+            <a href="#" aria-label>
+              <img src="images/Facebook.png" alt="Facebook" />
+            </a>
+            <a href="#" aria-label>
+              <img src="images/Instagram.png" alt="Instagram" />
+            </a>
+            <a href="#" aria-label>
+              <img src="images/WhatsApp.png" alt="WhatsApp" />
+            </a>
           </div>
         </div>
 
@@ -306,6 +309,7 @@
       }
     </script>
 
-  <script src="js/script.js" defer></script>
+   <script src="js/script.js" defer></script>
+
   </body>
 </html>
