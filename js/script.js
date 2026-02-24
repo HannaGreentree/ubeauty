@@ -1,7 +1,3 @@
-
-console.log("script.js loaded ✅");
-
-
 //NAVIGATION MENU MOBILE
 
 function main() {
@@ -90,43 +86,75 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-console.log("script.js loaded ✅");
 
+// CONTACT FORM
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("joinForm");
   const msg = document.getElementById("formMessage");
 
-  console.log("joinForm found?", !!form);
-  console.log("formMessage found?", !!msg);
-
   if (!form || !msg) return;
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    console.log("submit intercepted ✅");
+  const show = (text, type = "success") => {
+    msg.style.display = "block";
+    msg.textContent = text;
+    msg.classList.remove("error");
+    if (type === "error") msg.classList.add("error");
+    msg.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const invalidField = () => {
+    const requiredSelectors = [
+      "#name",
+      'select[name="promotion"]',
+      'select[name="legal"]',
+      'select[name="certificates"]',
+      "#english",
+      "#email",
+      "#phone",
+      "#profilephoto",
+    ];
+
+    for (const sel of requiredSelectors) {
+      const el = form.querySelector(sel);
+      if (!el) continue;
+
+      if (el.type === "file") {
+        if (!el.files || el.files.length === 0) return el;
+        continue;
+      }
+
+      if (el.tagName === "SELECT") {
+        if (!el.value) return el;
+        continue;
+      }
+
+      if (!el.value || !el.value.trim()) return el;
+
+      if (typeof el.checkValidity === "function" && !el.checkValidity()) return el;
+    }
 
     const checkedService =
       form.querySelectorAll('input[name="service[]"]:checked').length;
+    if (checkedService === 0) return form.querySelector('input[name="service[]"]');
 
-    if (!form.checkValidity()) {
-      form.reportValidity();
-      msg.style.display = "block";
-      msg.textContent =
-        "Please complete the required fields (*) before submitting.";
+    return null;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (typeof e.stopImmediatePropagation === "function") e.stopImmediatePropagation();
+
+    const bad = invalidField();
+    if (bad) {
+      show("Please complete the required fields (*) before submitting.", "error");
+      if (bad.focus) bad.focus();
       return;
     }
 
-    if (checkedService === 0) {
-      msg.style.display = "block";
-      msg.textContent = "Please select at least one service type.";
-      return;
-    }
-
-    msg.style.display = "block";
-    msg.textContent =
-      "Thank you for submitting the form! We’ll get back to you soon.";
-
+    show("Thank you for submitting the form! We’ll get back to you soon.");
     form.reset();
-    msg.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
+  };
+
+  form.onsubmit = handleSubmit;
+  form.addEventListener("submit", handleSubmit, true);
 });
