@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,9 +13,8 @@
     <title>UBeauty, contact</title>
   </head>
 
-  <!-- NAVIGATION BAR -->
-
   <body class="contact-page">
+    <!-- NAVIGATION BAR -->
     <nav class="navbar">
       <button
         class="menu-hamburger"
@@ -42,7 +41,6 @@
     </nav>
 
     <!--CONTACT PAGE MAIN SCREEN IMAGE-->
-
     <section class="contact-main">
       <div class="contact-main-image">
         <img src="images/BackgroundContactMain.jpg" alt="Background leaf" />
@@ -61,7 +59,6 @@
     </section>
 
     <!--CONTACT MAIN TEXT-->
-
     <section class="contact-whyus-section">
       <div class="contact-text">
         <div class="contact">
@@ -92,14 +89,22 @@
     </section>
 
     <!--CONTACT FORM-->
-
     <section class="contact-section">
       <h2>Join U-Beauty</h2>
+
+      <p
+        id="formMessage"
+        class="form-message"
+        aria-live="polite"
+        style="display: none"
+      ></p>
+
       <form
         class="contact-form"
-        action="submit"
-        method="post"
+        id="joinForm"
+        action="#"
         enctype="multipart/form-data"
+        novalidate
       >
         <label for="name">Full name / business name *</label>
         <input type="text" id="name" name="name" required />
@@ -128,11 +133,8 @@
               Hairdresser</label
             >
             <label
-              ><input
-                type="checkbox"
-                name="service[]"
-                value="Face Massage"
-              />Face Massage</label
+              ><input type="checkbox" name="service[]" value="Face Massage" />
+              Face Massage</label
             >
             <label
               ><input type="checkbox" name="service[]" value="Injections" />
@@ -164,10 +166,10 @@
 
         <div class="short-questions">
           <div class="question-item">
-            <label
-              >Are you interested in promotion of your service (fee-based) in
-              the future? *</label
-            >
+            <label>
+              Are you interested in promotion of your service (fee-based) in the
+              future? *
+            </label>
             <select name="promotion" required>
               <option value="">Select</option>
               <option value="Yes">Yes</option>
@@ -227,15 +229,15 @@
           </div>
         </div>
 
-        <label for="email">Your Email address: * </label>
+        <label for="email">Your Email address: *</label>
         <input type="email" id="email" name="email" required />
 
         <label for="phone">Your Phone number: *</label>
         <input type="tel" id="phone" name="phone" required />
 
-        <label for="serviceDetails"
-          >Provide additional information (50 words max):</label
-        >
+        <label for="serviceDetails">
+          Provide additional information (50 words max):
+        </label>
         <textarea
           id="serviceDetails"
           name="serviceDetails"
@@ -249,7 +251,6 @@
     </section>
 
     <!--FOOTER-->
-
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-logo">
@@ -263,13 +264,13 @@
         <div class="footer-center">
           <p class="follow-text">Follow us:</p>
           <div class="social-icons">
-            <a href="#" aria-label>
+            <a href="#" aria-label="Facebook">
               <img src="images/Facebook.png" alt="Facebook" />
             </a>
-            <a href="#" aria-label>
+            <a href="#" aria-label="Instagram">
               <img src="images/Instagram.png" alt="Instagram" />
             </a>
-            <a href="#" aria-label>
+            <a href="#" aria-label="WhatsApp">
               <img src="images/WhatsApp.png" alt="WhatsApp" />
             </a>
           </div>
@@ -303,13 +304,6 @@
       </div>
     </footer>
 
-    <script>
-      function toggleMenu() {
-        document.getElementById("navLinks").classList.toggle("active");
-      }
-    </script>
-
-   <script src="js/script.js" defer></script>
-
+    <script src="js/script.js" defer></script>
   </body>
 </html>
